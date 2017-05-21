@@ -39,7 +39,7 @@ export class NewPage {
   }
 
   operateEvent(operate) {
-    if(operate === 1){
+    if(operate === 1 && this.name != ""){
       let data = {}
       data["id"] = this.id;
       data["name"] = this.name;
