@@ -21,4 +21,12 @@ export class NewPage {
     console.log('ionViewDidLoad NewPage');
   }
 
+  selectEvent(select, color) {
+
+  }
+
+  operateEvent() {
+
+  }
+
 }
