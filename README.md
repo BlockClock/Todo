@@ -10,7 +10,7 @@
 ![](operate2.jpg)
 
 #### 恢复已经任务项
-![](operate2.jpg)
+![](operate3.jpg)
 
 #### 使用说明 
 拷贝该项目后
