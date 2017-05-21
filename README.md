@@ -1,26 +1,24 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+### 这个是一个基于Ionic3.2的Todo例子
 
-## How to use this template
+#### 演示效果
+![](demo.jpg)
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/driftyco/ionic2-app-base).
+#### 完成任务项
+![](operate1.jpg)
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/driftyco/ionic2-app-base).
+#### 删除任务项
+![](operate2.jpg)
 
-### With the Ionic CLI:
+#### 恢复已经任务项
+![](operate2.jpg)
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
+#### 使用说明 
+拷贝该项目后
 ```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+$ npm install
 ```
 
-Then, to run it, cd into `myBlank` and run:
-
+执行看效果
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ ionic serve
 ```
-
-Substitute ios for android if not on a Mac.
-
