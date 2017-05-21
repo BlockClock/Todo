@@ -34,19 +34,23 @@ export class TodoPage {
     console.log('ionViewDidLoad TodoPage');
   }
 
-  deleteEvent(data){
+  createEvent() {
+
+  }
+
+  deleteEvent(data) {
     
   }
 
-  todoEvent(data){
+  todoEvent(data) {
     
   }
 
-  doneEvent(data){
+  doneEvent(data) {
     
   }
   
-  openEvent(data){
+  openEvent(data) {
 
   }
 }
