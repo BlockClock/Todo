@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 import { ToolService } from '../../app/tool.service';
 /**
@@ -15,7 +15,18 @@ import { ToolService } from '../../app/tool.service';
 })
 export class NewPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  name: any;
+  color: any;
+  select: any;
+  id: any;
+
+  constructor(public navCtrl: NavController, 
+              public navParams: NavParams,
+              public viewCtrl: ViewController) {
+    this.id = ToolService.getInstance().UUID();            
+    this.name = "";
+    this.select = 1;
+    this.color = "Fire";
   }
 
   ionViewDidLoad() {
@@ -23,11 +34,20 @@ export class NewPage {
   }
 
   selectEvent(select, color) {
-
+    this.select = select;
+    this.color = color;
   }
 
-  operateEvent() {
-
+  operateEvent(operate) {
+    if(operate === 1){
+      let data = {}
+      data["id"] = this.id;
+      data["name"] = this.name;
+      data["color"] = this.color;
+      this.viewCtrl.dismiss(data);
+    } else {
+      this.viewCtrl.dismiss();
+    }
   }
 
 }
